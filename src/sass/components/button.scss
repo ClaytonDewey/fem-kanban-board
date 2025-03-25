@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(2) solid transparent;
+  background-image: none;
+  padding: 0 rem(15);
+  font-size: var(--fs-medium);
+  height: rem(48);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+
+  @include breakpoint(medium) {
+    height: rem(40);
+    border-width: rem(1);
+  }
+
+  &-primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border-color: var(--clr-primary);
+
+    &:hover {
+      background-color: var(--clr-secondary);
+      border-color: var(--clr-secondary);
+    }
+  }
+
+  &-secondary {
+    background-color: var(--clr-gray-100);
+    color: var(--clr-primary);
+    border-color: var(--clr-gray-100);
+  }
+}

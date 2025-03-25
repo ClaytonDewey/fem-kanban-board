@@ -1,0 +1,33 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  --clr-primary: #635fc7;
+  --clr-secondary: #a8a4ff;
+  --clr-tertiary: #ea5555;
+  --clr-alternate: #ff9898;
+
+  --clr-gray-700: #000112;
+  --clr-gray-600: #20212c;
+  --clr-gray-500: #2b2c37;
+  --clr-gray-400: #3e3f4e;
+  --clr-gray-300: #828fa3;
+  --clr-gray-200: #e4ebfa;
+  --clr-gray-100: #f4f7fd;
+
+  --clr-white: #fff;
+
+  // Font-family
+  --ff-sans: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+
+  // Font-sizes
+  --fs-xlarge: #{rem(24)};
+  --fs-large: #{rem(18)};
+  --fs-medium: #{rem(15)};
+  --fs-small: #{rem(13)};
+  --fs-xsmall: #{rem(12)};
+
+  // Flexbox gap/columns
+  --gap: #{rem(20)};
+  --columns: 2;
+}

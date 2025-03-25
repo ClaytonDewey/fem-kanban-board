@@ -1,0 +1,39 @@
+@use '../util' as *;
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+    margin: 0;
+    margin-bottom: rem(20);
+}
+
+// Typescale = 1.250 - Major Third
+// https://typescale.com/
+h1 {
+  font-size: var(--fs-xlarge);
+}
+h2 {
+  font-size: var(--fs-large);
+}
+h3 {
+  font-size: var(--fs-medium);
+}
+h4 {
+  font-size: var(--fs-small);
+}
+h5,
+h6 {
+  font-size: var(--fs-xsmall);
+}
+
+p {
+  font-size: var(--fs-small);
+  margin-bottom: rem(20);
+}
+
+.small,
+small {
+  font-size: var(--fs-xsmall);
+}
